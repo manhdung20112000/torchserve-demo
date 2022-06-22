@@ -80,4 +80,5 @@ if __name__ == '__main__':
         print(f'Epoch {epoch+1} | Train loss: {train_loss} | Test loss: {test_loss}')
 
         if best_val_loss > test_loss:
+            print('Model saved')
             torch.save(model.state_dict(), './model/weights/net.pt')

@@ -1,0 +1,8 @@
+2022-06-22T15:03:48,226 - HandlerTime.Milliseconds:415.12|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:27651461-7c91-4a62-a333-22ddd06164e3,timestamp:1655885028
+2022-06-22T15:03:48,227 - PredictionTime.Milliseconds:415.16|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:27651461-7c91-4a62-a333-22ddd06164e3,timestamp:1655885028
+2022-06-22T15:05:51,563 - HandlerTime.Milliseconds:52.34|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:d9578e2b-48be-4185-9f6a-17eabc2dfec2,timestamp:1655885151
+2022-06-22T15:05:51,563 - PredictionTime.Milliseconds:52.37|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:d9578e2b-48be-4185-9f6a-17eabc2dfec2,timestamp:1655885151
+2022-06-22T15:06:46,192 - HandlerTime.Milliseconds:17.53|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:10d6c13c-8aaf-4f43-9e25-5d62a3b52146,timestamp:1655885206
+2022-06-22T15:06:46,192 - PredictionTime.Milliseconds:17.55|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:10d6c13c-8aaf-4f43-9e25-5d62a3b52146,timestamp:1655885206
+2022-06-22T15:07:09,411 - HandlerTime.Milliseconds:11.3|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:569b9df9-fafd-4c06-ad4e-3340ef93c72e,timestamp:1655885229
+2022-06-22T15:07:09,411 - PredictionTime.Milliseconds:11.33|#ModelName:mnistnet,Level:Model|#hostname:hello-world-pc,requestID:569b9df9-fafd-4c06-ad4e-3340ef93c72e,timestamp:1655885229

@@ -51,7 +51,7 @@ torchserve --start \
            --model-store deployment/model-store \
            --models mnistnet=mnistnet.mar
 ```
-Check status (if server is 'healthy')
+Check status (if server is 'Healthy')
 
 ```bash
 curl http://localhost:8080/ping
@@ -62,4 +62,8 @@ Request prediction through HTTP request's:
 
 ```bash
 curl -X POST http://localhost:8080/predictions/mnistnet -T demo.png
+
+# or
+
+curl -X POST http://localhost:8080/predictions/mnistnet -T "data=@demo.png"
 ```
