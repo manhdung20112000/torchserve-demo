@@ -1,0 +1,1113 @@
+2022-06-22T11:44:41,794 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:41,794 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27197
+2022-06-22T11:44:41,795 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:41,795 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:41,801 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:41,818 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:41,878 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:41,879 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:44:41,880 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:44:41,884 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:44:41,885 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:41,886 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:41,889 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:41,889 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:41,889 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+2022-06-22T11:44:41,890 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:41,890 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:41,890 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:41,890 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+2022-06-22T11:44:41,890 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.image_handler'
+2022-06-22T11:44:43,198 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:43,198 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27217
+2022-06-22T11:44:43,198 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:43,198 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:43,199 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:43,208 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:43,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:44:43,267 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:44:44,592 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:44,592 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27222
+2022-06-22T11:44:44,592 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:44,592 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:44,593 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:44,602 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:44,663 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:44,663 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:44,663 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:44,663 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:44:44,664 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:44:46,974 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:46,975 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27268
+2022-06-22T11:44:46,975 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:46,975 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:46,976 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:46,984 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:47,042 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:47,043 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:47,043 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:47,043 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:47,043 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:47,043 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:50,351 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:50,351 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27286
+2022-06-22T11:44:50,351 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:50,352 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:50,352 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:50,361 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:44:50,422 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:44:50,423 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:55,740 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:44:55,740 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27307
+2022-06-22T11:44:55,740 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:44:55,740 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:44:55,741 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:44:55,750 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:44:55,810 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:44:55,811 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:45:04,119 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:45:04,119 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27321
+2022-06-22T11:45:04,120 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:45:04,120 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:45:04,121 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:45:04,134 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:45:04,195 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:45:04,195 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:45:04,196 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:45:17,515 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:45:17,515 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27376
+2022-06-22T11:45:17,515 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:45:17,515 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:45:17,516 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:45:17,526 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:45:17,587 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:45:17,588 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:45:17,588 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:45:17,588 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:45:17,588 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:45:38,895 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:45:38,895 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27430
+2022-06-22T11:45:38,895 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:45:38,895 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:45:38,896 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:45:38,907 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:45:38,967 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+2022-06-22T11:45:38,968 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:46:13,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:46:13,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27455
+2022-06-22T11:46:13,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:46:13,266 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:46:13,268 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:46:13,277 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:46:13,337 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:46:13,338 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:47:08,639 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:47:08,640 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27488
+2022-06-22T11:47:08,640 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:47:08,640 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:47:08,641 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:47:08,652 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:47:08,713 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:47:08,714 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:48:38,027 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:48:38,027 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - [PID]27582
+2022-06-22T11:48:38,027 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:48:38,027 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:48:38,028 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:48:38,036 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - model_name: net, batchSize: 1
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/tmp/models/fd7d9c8cc16348d6b5f3ee6c92e3fd72/image_handler.py", line 3, in <module>
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:48:38,097 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - 
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:48:38,098 [INFO ] W-9000-net_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+2022-06-22T11:50:00,233 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:00,234 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]27887
+2022-06-22T11:50:00,234 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:00,234 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:00,241 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:00,258 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:00,316 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:00,316 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:00,316 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:00,316 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:00,317 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:50:00,318 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:50:00,319 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+2022-06-22T11:50:00,320 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.image_handler'
+2022-06-22T11:50:01,634 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:01,634 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]27907
+2022-06-22T11:50:01,634 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:01,634 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:01,636 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:01,645 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:01,703 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:01,704 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:03,003 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:03,003 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]27911
+2022-06-22T11:50:03,003 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:03,003 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:03,004 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:03,013 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:03,070 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:03,070 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:03,071 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:03,072 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:05,386 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:05,387 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]27915
+2022-06-22T11:50:05,387 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:05,387 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:05,388 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:05,397 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:05,455 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:05,456 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:08,793 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:08,793 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]27995
+2022-06-22T11:50:08,793 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:08,794 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:08,795 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:08,805 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:08,877 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:08,878 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:14,185 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:14,191 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]28025
+2022-06-22T11:50:14,191 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:14,191 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:14,193 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:14,202 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:14,260 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:14,261 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:50:14,262 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:50:22,562 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:22,562 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]28036
+2022-06-22T11:50:22,562 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:22,562 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:22,563 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:22,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:22,637 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:22,637 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:22,637 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:22,637 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:50:22,638 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:50:35,939 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:35,939 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]28048
+2022-06-22T11:50:35,939 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:35,939 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:35,941 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:35,951 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:36,010 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:36,011 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:57,323 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:50:57,323 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]28057
+2022-06-22T11:50:57,323 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:50:57,323 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:50:57,324 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:50:57,334 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:50:57,394 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:50:57,395 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:51:31,725 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:51:31,725 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]28076
+2022-06-22T11:51:31,725 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:51:31,725 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:51:31,726 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:51:31,737 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:51:31,798 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/7032e0bf84dd475cbf107b6fd338cee6/image_handler.py", line 3, in <module>
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:51:31,799 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:54:55,948 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:54:55,948 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29143
+2022-06-22T11:54:55,948 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:54:55,949 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:54:55,955 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:54:55,972 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:54:56,034 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:54:56,035 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:54:56,036 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:54:56,040 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:54:56,041 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:54:56,042 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:54:56,042 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:54:56,045 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:54:57,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:54:57,354 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29163
+2022-06-22T11:54:57,354 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:54:57,354 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:54:57,355 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:54:57,364 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:54:57,423 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:54:57,423 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:54:57,423 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:54:57,423 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:54:57,424 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:54:58,740 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:54:58,740 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29167
+2022-06-22T11:54:58,741 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:54:58,741 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:54:58,742 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:54:58,750 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:54:58,810 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:54:58,810 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:54:58,811 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:01,127 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:01,128 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29175
+2022-06-22T11:55:01,128 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:01,128 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:01,129 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:01,137 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:01,197 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:01,198 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:04,506 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:04,507 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29179
+2022-06-22T11:55:04,507 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:04,507 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:04,508 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:04,516 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:04,577 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:04,578 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:55:09,899 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:09,899 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29192
+2022-06-22T11:55:09,899 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:09,899 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:09,900 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:09,909 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:09,969 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:09,970 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:55:18,271 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:18,271 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29222
+2022-06-22T11:55:18,271 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:18,271 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:18,272 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:18,286 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:18,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:18,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:18,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:18,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:18,347 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:18,348 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:55:31,687 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:31,687 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29257
+2022-06-22T11:55:31,687 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:31,687 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:31,688 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:31,698 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:31,762 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:31,763 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:53,114 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:55:53,114 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29324
+2022-06-22T11:55:53,114 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:55:53,114 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:55:53,115 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:55:53,127 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:55:53,188 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:55:53,188 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:53,188 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:55:53,188 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:55:53,188 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:55:53,189 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:56:27,550 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2022-06-22T11:56:27,550 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - [PID]29447
+2022-06-22T11:56:27,550 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-22T11:56:27,550 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Python runtime: 3.9.12
+2022-06-22T11:56:27,551 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2022-06-22T11:56:27,560 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - model_name: mnistnet, batchSize: 1
+2022-06-22T11:56:27,623 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-22T11:56:27,623 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:56:27,623 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 100, in load
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 162, in _load_handler_file
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/tmp/models/fbadfc21f2da40d9bf906117261ec2c2/image_handler.py", line 3, in <module>
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/image_classifier.py", line 8, in <module>
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - 
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 210, in <module>
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 181, in run_server
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 139, in handle_connection
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_service_worker.py", line 104, in load_model
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 102, in load
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/site-packages/ts/model_loader.py", line 167, in _load_default_handler
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -   File "/home/nmd2000/miniconda3/envs/ml/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-06-22T11:56:27,624 [INFO ] W-9000-mnistnet_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
